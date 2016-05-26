@@ -6,6 +6,7 @@ import Accounts from './routes/accounts';
 import MeteorListView from './routes/meteorListView';
 import MeteorComplexListView from './routes/meteorComplexListView';
 import EditItem from './routes/editItem';
+import SwipeView from './routes/swipeView';
 
 const Router = {
   getList() {
@@ -67,7 +68,6 @@ const Router = {
       }
     }
   },
-
   getEditItem() {
     return {
       renderScene(nav) {
@@ -76,6 +76,17 @@ const Router = {
 
       getTitle() {
         return 'Edit Item';
+      }
+    }
+  },
+  getSwipeView() {
+    return {
+      renderScene(nav) {
+        return <SwipeView navigator={nav} />;
+      },
+
+      getTitle() {
+        return 'Swipe View';
       }
     }
   }

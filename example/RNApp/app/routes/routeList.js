@@ -6,7 +6,8 @@ const ROUTE_LIST = [
   { name: 'Accounts', route: 'getAccounts' },
   { name: 'Meteor List View', route: 'getMeteorListView' },
   { name: 'Meteor Complex List View', route: 'getMeteorComplexListView' },
-  { name: 'Edit Item', route: 'getEditItem' }
+  { name: 'Edit Item', route: 'getEditItem' },
+  { name: 'Swipeable Views', route: 'getSwipeView'}
 ];
 
 class RouteList extends Component {
